@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  font-family: sans-serif;
+  background-image: url("../images/fond-page.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.overlay-game {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: scroll;
+}
+
+.pokemon-game {
+  z-index: 99;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.content-center {
+  justify-content: center;
+  gap: 60px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.tiny {
+  font-size: 10px;
+  margin-right: 5px;
+}
+
+.content-card {
+  width: 25%;
+  padding: 30px;
+}
+
+/*LOGO*/
+.card-center .logo {
+  width: 300px;
+  max-width: 95%;
+  margin: auto;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.content-card.card-center {
+  width: 33%;
+}
+
+/* CARD */
+.content {
+  width: 300px;
+  margin: auto;
+}
+
+#pokemon-random-cards {
+  width: 100%;
+  height: 390px;
+}
+
+.pokemon-random-cards .card {
+  width: 300px;
+  padding: 20px;
+  height: 400px;
+  border-radius: 15px;
+  border: 2px solid #ffcb05;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+  animation: fade 0.3s ease;
+  overflow: hidden;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .pokemon-random-cards .card .img {
+  width: 100%;
+  border: 1px solid;
+  height: 150px;
+  margin-top: 20px;
+  background-image: url("./src/assets/fond-carte.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.img {
+  width: 100%;
+  border: 1px solid;
+  height: 150px;
+  margin-top: 20px;
+  background-image: url("../images/fond-carte.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-random-cards .card .img .main-img {
+  width: 150px;
+}
+
+.description {
+  font-size: 8px;
+}
+
+.content-abilities .description {
+  margin-top: 20px;
+}
+
+/* .hide-card {
+  opacity: 0;
+  display: none;
+} */
+
+/* Buttons */
+.buttons {
+  margin-top: 40px;
+}
+
+.buttons .btn {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 50px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn#start-btn {
+  background-color: #ffcb05;
+  color: #000;
+}
+
+.btn#stop-btn {
+  background-color: #cb5252;
+  color: #fff;
+}
+
+/* Empty cards */
+.empty-cards-content {
+  width: 180px;
+  height: 226px;
+  margin: auto;
+}
+
+.empty-cards-content .empty-cards {
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgba(255, 255, 255, 0.308);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-cards-content .empty-cards-number {
+  width: 100%;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.308);
+  text-align: center;
+}
+
+.empty-cards-content .empty-cards .cards {
+  width: 130px;
+  height: 180px;
+  background: #fff;
+  border-radius: 7px;
+  border: 2px solid #ffcb05;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .pokemon-game {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .card-center .logo {
+    margin-bottom: 20px;
+  }
+
+  .pokemon-random-cards .card {
+    transform: scale(0.85);
+  }
+
+  .pokemon-game.d-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flex-column {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .content-card {
+    width: 100%;
+    padding: 0;
+  }
+
+  .content-center {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .content-card:nth-child(2) {
+    width: 100%;
+    order: -1;
+  }
+
+  .empty-cards-content {
+    width: 120px;
+    min-height: 107px;
+    height: 130px;
+    margin-bottom: 40px;
+  }
+
+  .empty-cards-content .empty-cards {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .empty-cards-content .empty-cards .cards {
+    width: 100%;
+    height: 100%;
+  }
+
+  .buttons {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 30px;
+  }
+}

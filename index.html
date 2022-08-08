@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" defer src="./assets/javascript/index.js"></script>
+  </head>
+
+  <body>
+    <div class="overlay-game">
+      <div class="pokemon-game d-flex content-center">
+        <div class="content-card flex-column">
+          <div class="empty-cards-content" data-id="1">
+            <h2 class="empty-cards-number">1</h2>
+            <div class="empty-cards">
+              <div class="cards" id="1"></div>
+            </div>
+          </div>
+
+          <div class="empty-cards-content" data-id="2">
+            <h2 class="empty-cards-number">2</h2>
+            <div class="empty-cards">
+              <div class="cards"></div>
+            </div>
+          </div>
+
+          <div class="empty-cards-content" data-id="3">
+            <h2 class="empty-cards-number">3</h2>
+            <div class="empty-cards">
+              <div class="cards"></div>
+            </div>
+          </div>
+        </div>
+        <div class="content-card card-center">
+          <div class="content">
+            <img src="./src/logo.png" alt="" class="logo" />
+            <div class="pokemon-random-cards" id="pokemon-random-cards">
+              <div class="card hide-card" id="card" draggable="true">
+                <div class="name-level d-flex space-between">
+                  <h5 id="name" class="name"></h5>
+                  <span id="level" class="level"></span>
+                </div>
+                <div class="img" id="img">
+                  <img id="main-image" class="main-img" />
+                </div>
+                <div class="abilities" id="abilities"></div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="btn" id="start-btn">Lancer</button>
+              <button class="btn" id="stop-btn">
+                Stop <span id="span-timer"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-card flex-column">
+            <div class="empty-cards-content" data-id="4">
+              <h2 class="empty-cards-number">4</h2>
+              <div class="empty-cards">
+                <div class="cards"></div>
+              </div>
+            </div>
+  
+            <div class="empty-cards-content" data-id="5">
+              <h2 class="empty-cards-number">5</h2>
+              <div class="empty-cards">
+                <div class="cards"></div>
+              </div>
+            </div>
+  
+            <div class="empty-cards-content" data-id="6">
+              <h2 class="empty-cards-number">6</h2>
+              <div class="empty-cards">
+                <div class="cards"></div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
