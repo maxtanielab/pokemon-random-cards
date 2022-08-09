@@ -12,7 +12,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
-  overflow-x: hidden;
+  	overflow-x: hidden;
 }
 
 .overlay-game {
@@ -65,7 +65,7 @@ body {
 	padding: 30px;
 }
 
-/*LOGO*/
+/* Logo */
 .card-center .logo {
 	width: 300px;
 	max-width: 95%;
@@ -74,14 +74,14 @@ body {
 	margin-bottom: 40px;
 }
 
-.content-card.card-center {
-	width: 33%;
-}
-
-/* CARD */
+/* Card */
 .content {
 	width: 300px;
 	margin: auto;
+}
+
+.content-card.card-center {
+	width: 33%;
 }
 
 #pokemon-random-cards {
@@ -126,9 +126,11 @@ body {
 	margin-top: 20px;
 	font-size: 8px;
 }
+
 .numbers {
 	font-size: 12px;
 }
+
 .icon {
 	font-size: 10px;
 }
@@ -198,8 +200,8 @@ body {
 	overflow: hidden;
 }
 
-/* Responsive */
-@media screen and (max-width: 1000px) {
+/* Responsive Mobile & Tablet */
+@media screen and (max-width: 1024px) {
 	.pokemon-game {
 		max-width: 90%;
 		margin: auto;
